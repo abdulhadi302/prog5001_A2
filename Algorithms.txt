@@ -1,0 +1,70 @@
+          								Algorithm 1
+
+
+
+selectfromstudent
+orderbyasc
+limit10
+fromarray
+letsupposedataisinarraynamedstudents
+letresult=students.sort(function(a,b){returna-b});
+result.map((item)=>{
+letcount=1;
+if(count<=10){
+topTen.push({item});
+count=count+1;
+}else{exit}
+})
+console.log(topTen,"top10students")
+lowest10
+letsupposedataisinarraynamedstudents
+letresult=students.sort(function(a,b){returnb-a});
+result.map((item)=>{
+letcount=1;
+if(count<=10){
+topTen.push({item});
+count=count+1;
+}else{exit}
+})
+console.log(topTen,"lowest10students"
+ 
+
+												Algorithm 2
+
+
+
+int option = input.nextInt();
+            switch (option) {
+                case 1: {
+                    print StudentDetails(student_list);
+                    break;
+                }
+                case 2: {
+                    print TotalMarks(student_list);
+                    break;
+                }
+                case 3: {
+                    print ("Enter threshold:");
+                    int threshold = input.nextInt();
+                    if (threshold > 0) {
+                        print ("........Printing students with marks less than " + threshold + " ......\n");
+                        for (i < student_list.size(); i++) {
+                            Student student = student_list.get(i);
+                            if (threshold > student.getTotalMarks()) {
+                                print (student.fullName + ", total marks = " + student.getTotalMarks());
+                            }
+                        }
+
+                    } else {
+                        print ("Invalid threshold!");
+                    }
+                    break;
+                }
+                case 4: {
+                    printTop10Students(student_list);
+                    break;
+                }
+                case 5: {
+                    print ("Exiting the program.....");
+                    break;
+                }
